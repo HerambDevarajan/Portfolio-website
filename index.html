@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/3cadfaf6e6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav class="navbar">
+            <img src="images/logo3.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">My Projects</a></li>
+                <li><a href="#contact">Contact Details</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi I'm <br><span>Heramb Devarajan</span></h1>
+            <p>And I'm a <span id="element"></span></p>
+            <a href="images/HerambCV.pdf" download class="cv1">Download CV</a>
+        </div>
+    </div>
+</div>
+
+<!---- about section ---->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pic2.jpeg" class="pic">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a passionate and motivated Computer Science student with a strong interest in Data Science, Programming, and Cybersecurity. My technical skills include Python, Java, C, and SQL, and I have experience with Machine Learning algorithms. I'm also knowledgeable in Web Development, Networking, and Systems Administration. I'm a highly organized problem solver who enjoys the challenge of working on complex projects. I am a fast learner and highly adaptable to various technologies. Outside of my studies, I take part in various other coding competitions. I'm looking for opportunities to further my knowledge and experience in the field.
+                </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Science</span><br>Applying Machine Learning Algorithms to find conclusive results about the data set and submit a detailed report about the findings in the project.</li>
+                            <li><span>Web Development</span><br>Create basic web applications with front-end using Html, Css, Javascript and back-end using Python/Java/C and appying database connectivity with MySql, SqlLite, or PostgreSql.</li>
+                            <li><span>GUI/App Development</span><br>Developing fully functional GUI/App interfaces with back-end using Python/Java/C as backend and connecting it with database like MySql, SqlLite, PostgreSql, etc.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Present</span> <br>GDSC - Student Member</li>
+                            <li><span>2022 - Present</span> <br>IEEE - Student Member</li>
+                            <li><span>2022 - Present</span> <br>Postman - Student Expert</li>
+                            <li><span>2021 - Present</span> <br>ACM - Student Member</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-25</span><br>Bits Pilani Dubai Campus<br>Grade: 9.77 CGPA</li>
+                            <li><span>2020-21</span><br>SSVM, Mettupalayam <br>12th Boards: 96%</li>
+                            <li><span>2017-18</span><br>Gems Millenium School, Sharjah<br>10th Boards: 92%</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!---- portfolio section ---->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Recent Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/portfoliopic.png">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>This is a website to showcase your projects and skills to
+                        companies or people who want to know about your experience.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/Inventory.png">
+                <div class="layer">
+                    <h3>Java GUI </h3>
+                    <p>This is a Java GUI for managing your inventory and order. This is very 
+                        useful for Labs and Shops as it was made for improvisation of College Laboratory Management.
+                    </p>
+                    <a href="https://github.com/HerambDevarajan/Inventory-Management-System-GUI"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/teslagamestop.png">
+                <div class="layer">
+                    <h3>Tesla vs Gamestop Stock Analysis</h3>
+                    <p>This is a project to analyse the stock price of Tesla and GameStop
+                         in order to come to a conclusion of which is better to invest in.
+                    </p>
+                    <a href="https://github.com/HerambDevarajan/Tesla-vs-GameStop-Stock-Analysis"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!---- portfolio 2 section ---->
+<div id="portfolio2">
+    <div class="container">
+        <div class="project-list">
+            <div class="project">
+                <img src="images/housing.png">
+                <div class="layer">
+                    <h3>Housing Sales in King County, USA</h3>
+                    <p>This is a project to analyse the housing sale in King County, USA 
+                        and gain insights from the data.
+                    </p>
+                    <a href="https://github.com/HerambDevarajan/House-Sales-in-King-County-USA"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/boston.png">
+                <div class="layer">
+                    <h3>Boston Housing Price Prediction </h3>
+                    <p>This is a project to predict the housing price in Boston 
+                        using Linear Regression. We then test the accuracy of our model.
+                    </p>
+                    <a href="https://github.com/HerambDevarajan/Boston-Housing-Price-Analysis"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/map.png">
+                <div class="layer">
+                    <h3>Map Generation Using Python</h3>
+                    <p>This is a project to generate maps related to the dataset in 
+                        order to visualize the dataset in a better way.
+                    </p>
+                    <a href="https://github.com/HerambDevarajan/Map-generation-in-python-using-folium"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/HerambDevarajan?tab=repositories" class="see-more">See more</a>
+
+    </div>
+</div>
+<!---- contact section ---->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact">
+                <h1 class="sub-title">Contact Me:</h1>
+                <a href="mailto:herambdevarajan1@gmail.com"><p><i class="fa-sharp fa-solid fa-paper-plane"></i> herambdevarajan1@gmail.com</p></a>
+                <p><i class="fa-solid fa-square-phone"></i> +971 55 887 5470</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/heramb-devarajan-08645424a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/heramb_devarajan/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/HerambDevarajan"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/HerambCV.pdf" download class="cv1">Download CV</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+<script src="script1.js"></script>
+
+</body>
+</html>
