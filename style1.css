@@ -15,7 +15,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background2.png);
+    background-image: url(images/webpic1.png);
     background-size: cover;
     background-position: center;
 }
@@ -351,7 +351,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/mobpic1.png);
+        background-image: url(images/webmobpic1.png);
     }
     .header-text{
         margin-top: 100%;
@@ -359,6 +359,9 @@ nav .fa-solid{
     }
     .header-text h1{
         font-size: 30px;
+    }
+    .header-text h1 span{
+        color: #1eb23a;
     }
     nav .fa-solid{
         display: block;
